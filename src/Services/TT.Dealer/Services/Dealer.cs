@@ -25,11 +25,9 @@ namespace TT.Dealer.Services
 
                 AddPlayerAndUpdateScore(dic, key, player);
 
-                if ((i + 1) % 3 == 0)
-                {
-                    isWeak = !isWeak;
-                    DecideMethod(isWeak);
-                }
+                isWeak = !isWeak;
+                DecideMethod(isWeak);
+
             }
             return dic;
         }
